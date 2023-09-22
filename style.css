@@ -1,0 +1,36 @@
+body {
+    background-color: dimgray;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.headerLink {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drawContainer {
+    display: flex;
+    background-color: white;
+    height: 512px;
+    width: 512px;
+}
