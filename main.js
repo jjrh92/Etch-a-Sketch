@@ -24,24 +24,30 @@ let drawContainer = document.createElement ("div");
 drawContainer.setAttribute ("class","drawContainer");
 drawContainer.setAttribute ("id","drawContainer");
 
-
 main.appendChild (drawContainer);
 body.appendChild (main);
 
-let gridSize = 16;
-
 function createGrid (val) {
 
-    val = gridSize
+    let squareSize = 16; // This defines the size of the square in pixels
 
-    for (let index = 1; index <= 784; index++) {
+    val = squareSize;
+
+    drawContainer.style.display = "grid";
+    drawContainer.style.gridTemplateColumns = `repeat(${val}, 1fr)`
+    drawContainer.style.gridTemplateRows = `repeat(${val}, 1fr)`
+    drawContainer.style.height = squareSize*2;
+    drawContainer.style.width = squareSize*2;
+
+    for (let index = 1; index <= val*val; index++) {
 
         let square = document.createElement ("div");
-        square.style.height=gridSize+"px";
-        square.style.width=gridSize+"px";
-        // square.style.border="1px solid red";
+        square.setAttribute ("class","square");
+        square.style.height = squareSize+"px";
+        square.style.width = squareSize+"px";
+        square.style.border = "1px solid red";
 
-        square.addEventListener("mouseover", function handleClick () {
+        square.addEventListener("mouseover", function handleMouse () {
 
 
             square.style.backgroundColor=colorInput.value;
@@ -53,28 +59,54 @@ function createGrid (val) {
         
     }
 
+    let colorContainer = document.createElement ("div");
+    colorContainer.setAttribute ("class", "colorContainer");
+    let colorInput = document.createElement ("input");
+    colorInput.setAttribute ("class", "colorInput");
+    let colorLabel = document.createElement ("label");
+    colorLabel.setAttribute ("for", "colorInput")
+    colorLabel.setAttribute ("class", "colorLabel");
+    colorLabel.innerText = "Pick a color"
+    let startingColor = "#002AFF";
+    colorInput.value = startingColor;
+    colorInput.setAttribute ("id", "colorInput");
+    colorInput.setAttribute ("type", "color");
+    colorContainer.appendChild (colorInput);
+    colorContainer.appendChild (colorLabel);
+    body.appendChild (colorContainer);
+
+    // Size Input
+    let sizeContainer = document.createElement ("div");
+    sizeContainer.setAttribute ("class", "colorContainer");
+    let sizeInput = document.createElement ("input");
+    sizeInput.setAttribute ("class", "sizeInput");
+    let sizeLabel = document.createElement ("label");
+    sizeLabel.setAttribute ("for", "sizeInput")
+    sizeLabel.setAttribute ("class", "sizeLabel");
+    sizeLabel.innerText = "Canvas Size"
+
+    sizeInput.setAttribute ("id", "sizeInput");
+    sizeInput.setAttribute ("type", "range");
+    sizeInput.setAttribute ("step", "2")
+
+    sizeInput.setAttribute ("min", "16")
+    sizeInput.setAttribute ("max", "22")
+
+    sizeInput.addEventListener("input", function setCurrentSize () {
+
+        let currentSize = sizeInput.value
+
+        sizeInput.setAttribute ("value", currentSize)
+        console.log (currentSize)
+        return currentSize
+
+    })
+
+    sizeInput.setAttribute ("title", sizeInput.value);
+    sizeContainer.appendChild (sizeInput);
+    sizeContainer.appendChild (sizeLabel);
+    body.appendChild (sizeContainer);
+
 }
 
 createGrid ()
-
-let controlsContainer = document.createElement ("div");
-controlsContainer.setAttribute ("class", "controlsContainer");
-
-let colorInput = document.createElement ("input");
-colorInput.setAttribute ("class", "colorInput");
-let colorLabel = document.createElement ("label");
-colorLabel.setAttribute ("for", "colorInput")
-colorLabel.setAttribute ("class", "colorLabel");
-colorLabel.innerText = "Pick a color"
-let startingColor = "#002AFF";
-colorInput.value = startingColor;
-
-colorInput.setAttribute ("id", "colorInput");
-
-colorInput.setAttribute ("type", "color");
-
-controlsContainer.appendChild (colorInput);
-
-controlsContainer.appendChild (colorLabel);
-
-body.appendChild (controlsContainer);

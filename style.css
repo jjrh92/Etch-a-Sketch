@@ -29,16 +29,16 @@ body {
 }
 
 .drawContainer {
-    display: flex;
+
+    background-color: white;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    justify-items: center;
     flex-wrap: wrap;
-    height: 512px;
-    width: 512px;
+
 }
 
-.controlsContainer {
+.colorContainer {
 
     margin: 30px;
     display: flex;
@@ -57,6 +57,22 @@ body {
 }
 
 .colorInput {
+    height: 35px;
+    width: 100px;
+    margin: 0.4rem;
+}
+
+.sizeLabel {
+    font-size: 35px;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    user-select: none;
+    display: flex;
+    align-self: center;
+}
+
+.sizeInput {
     height: 35px;
     width: 100px;
     margin: 0.4rem;
