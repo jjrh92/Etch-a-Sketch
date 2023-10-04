@@ -1,79 +1,61 @@
 body {
     background-color: midnightblue;
-    justify-content: center;
-    align-items: center;
     height: 100%;
 }
 
-.header {
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 1px solid green;
+    border-radius: 3px;
+}
+
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-}
-
-.headerLink {
-    font-size: 70px;
-    font-weight: bold;
-    color: aliceblue;
-    text-decoration: none;
     user-select: none;
+    font-size: 70px;
+    text-decoration: none;
+    color: aliceblue;
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.main {
+.content {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.drawContainer {
-
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    flex-wrap: wrap;
-
-}
-
-.colorContainer {
+.buttons {
 
     margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
-.colorLabel {
-    font-size: 35px;
-    font-weight: bold;
+label {
+
+    font-size: 30px;
     color: aliceblue;
-    text-decoration: none;
-    user-select: none;
-    display: flex;
-    align-self: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.colorInput {
-    height: 35px;
-    width: 100px;
-    margin: 0.4rem;
-}
+input {
 
-.sizeLabel {
-    font-size: 35px;
-    font-weight: bold;
-    color: aliceblue;
-    text-decoration: none;
-    user-select: none;
-    display: flex;
-    align-self: center;
-}
+    height: 20px;
+    width: 20px;
 
-.sizeInput {
-    height: 35px;
-    width: 100px;
-    margin: 0.4rem;
 }
