@@ -19,7 +19,7 @@ function drawBoard (size) {
     }
 
     let rangeLabel = document.querySelector ("#rangeLabel");
-    rangeLabel.innerHTML ="Current Size: " + size + "x" + size;
+    rangeLabel.innerHTML ="Size: " + size + "x" + size;
 
     function resetSquare () {
 
