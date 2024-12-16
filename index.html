@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-palette-web-flaticons-lineal-color-flat-icons-2.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch-a-Sketch | julioreyes.dev</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon"
-            href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-palette-web-flaticons-lineal-color-flat-icons-2.png"
-            type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
-        <title>Etch-a-Sketch | jjrh92.dev</title>
-    </head>
+  <body>
+    <header>
+      <a draggable="false" class="title" title="Refresh this page" href="/"
+        >Etch-a-Sketch | julioreyes.dev</a
+      >
+    </header>
 
-    <body>
+    <main>
+      <div class="board"></div>
 
-        <header>
-            <a draggable="false" class="title" title="Refresh this page" href="/">Etch-a-Sketch | jjrh92.dev</a>
-        </header>
+      <div id="colorContainer" class="colorContainer">
+        <input
+          type="color"
+          id="colorInput"
+          class="colorInput"
+          value="#002AFF"
+        />
+        <label id="colorLabel" class="colorLabel" for="colorInput"
+          >Change Color</label
+        >
+      </div>
 
-        <main>
+      <div id="rangeContainer" class="rangeContainer">
+        <label id="rangeLabel" class="rangeLabel" for="rangeInput"
+          >Size 16x16</label
+        >
+        <input
+          id="rangeInput"
+          class="rangeInput"
+          type="range"
+          placeholder="Board Size"
+          step="2"
+          min="2"
+          value="16"
+          max="100"
+          onchange="changeSize(this.value)"
+        />
+      </div>
 
-            <div class="board"></div>
+      <div id="checksContainer" class="checksContainer">
+        <input id="eraserInput" class="eraserInput" type="checkbox" />
+        <label id="eraserLabel" class="eraserLabel" for="eraserInput"
+          >Eraser</label
+        >
 
-            <div id="colorContainer" class="colorContainer">
-                <input type="color" id="colorInput" class="colorInput" value="#002AFF">
-                <label id="colorLabel" class="colorLabel" for="colorInput">Change Color</label>
-            </div>
+        <input id="rainbowInput" class="rainbowInput" type="checkbox" />
+        <label id="rainbowLabel" class="rainbowLabel" for="rainbowInput"
+          >Rainbow</label
+        >
 
-            <div id="rangeContainer" class="rangeContainer">
-                <label id="rangeLabel" class="rangeLabel" for="rangeInput">Size 16x16</label>
-                <input id="rangeInput" class="rangeInput" type="range" placeholder="Board Size" step="2" min="2" value="16"
-                    max="100" onchange="changeSize(this.value)" />
-            </div>
+        <input id="resetInput" class="resetInput" type="checkbox" />
+        <label id="resetLabel" class="resetLabel" for="resetInput">Reset</label>
+      </div>
+    </main>
+  </body>
 
-            <div id="checksContainer" class="checksContainer">
-                <input id="eraserInput" class="eraserInput" type="checkbox" />
-                <label id="eraserLabel" class="eraserLabel" for="eraserInput">Eraser</label>
-
-                <input id="rainbowInput" class="rainbowInput" type="checkbox" />
-                <label id="rainbowLabel" class="rainbowLabel" for="rainbowInput">Rainbow</label>
-
-                <input id="resetInput" class="resetInput" type="checkbox" />
-                <label id="resetLabel" class="resetLabel" for="resetInput">Reset</label>
-            </div>
-
-        </main>
-
-    </body>
-
-    <script src="main.js"></script>
-
+  <script src="main.js"></script>
 </html>
