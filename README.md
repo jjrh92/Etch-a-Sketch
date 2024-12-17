@@ -2,14 +2,14 @@
 
 <div align="center">
 
-![Github Contributors](https://img.shields.io/github/contributors/jjrh92/Etch-a-Sketch)
-![Github Stars](https://img.shields.io/github/stars/jjrh92/Etch-a-Sketch)
-![Github Issues](https://img.shields.io/github/issues-raw/jjrh92/Etch-a-Sketch)
+![Github Contributors](https://img.shields.io/github/contributors/jjrh92/Sketch)
+![Github Stars](https://img.shields.io/github/stars/jjrh92/Sketch)
+![Github Issues](https://img.shields.io/github/issues-raw/jjrh92/Sketch)
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/jjrh92/Etch-a-Sketch">
+  <a href="https://github.com/jjrh92/Sketch">
     <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-palette-web-flaticons-lineal-color-flat-icons-2.png" alt="Logo" width="200" height="200">
   </a>
 
@@ -19,11 +19,11 @@
     Etch-a-Sketch.
     <br />
     <br />
-    <a href="https://jjrh92.github.io/Etch-a-Sketch/">View Demo - Ver Demo</a>
+    <a href="https://sketch.julioreyes.dev/">View Demo - Ver Demo</a>
     ·
-    <a href="https://github.com/jjrh92/Etch-a-Sketch/issues">Report Bug - Reportar Bug</a>
+    <a href="https://github.com/jjrh92/Sketch/issues">Report Bug - Reportar Bug</a>
     ·
-    <a href="https://github.com/jjrh92/Etch-a-Sketch/issues">Request Feature - Pedir Feature</a>
+    <a href="https://github.com/jjrh92/Sketch/issues">Request Feature - Pedir Feature</a>
   </p>
 </div>
 
@@ -50,7 +50,7 @@ Install the project locally - Instalar el proyecto localmente.
 
 Clone the repo and run a liveserver
    ```sh
-   git clone https://github.com/jjrh92/Etch-a-Sketch.git
+   git clone https://github.com/jjrh92/Sketch.git
    ```
 
 <!-- USAGE EXAMPLES -->
@@ -59,7 +59,6 @@ Usage <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2lvcWx2Ynpia3
 </h1>
 
 Draw on your screen or use the rainbow effect mode for more fun!
-
 
 <!-- CONTRIBUTING -->
 <h1 align="center"> 
