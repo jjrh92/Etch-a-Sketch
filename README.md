@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/jjrh92/Sketch">
-    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-palette-web-flaticons-lineal-color-flat-icons-2.png" alt="Logo" width="200" height="200">
+    <img src="https://m.media-amazon.com/images/I/71SrUYZR1gL._h1_.png" alt="Logo" width="200" height="200">
   </a>
 
 <h3 align="center">Welcome - Bienvenid@</h3>
